@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    <h2 style="text-align: center; color: aquamarine;">Đăng Nhập</h2>
+    <div class="container" style="border-radius: 10px; box-shadow: 5px 0px 0px 5px rebeccapurple; width: 700px; margin: 0 auto; background-color:rgb(0, 223, 252); height: 100px; display: flex; align-items: center; justify-content: center;">
+        <input type="text" id="name" placeholder="tên đăng nhập" style="border-radius: 10px; height: 30px;">
+        <input type="password" id="pass" style="margin: 10px; border-radius: 10px; height:30px" placeholder="mật khẩu">
+        <input onclick="submit()" type="submit" style="height: 30px;">
+    </div>
+    <h2 style="text-align: center; color: aquamarine;">Xoá Tài Khoản</h2>
+    <div class="wrap" style="border-radius: 10px; box-shadow: 5px 0px 0px 5px rebeccapurple; width: 700px; margin: 20px auto; background-color:aquamarine; height: 100px; display: flex; align-items: center; justify-content: center;"">
+        <input type="text" placeholder="Nhập tên cần xoá:" id="remove" style="margin: 10px; border-radius: 10px; height: 30px;">
+        <input type="submit" onclick="remove()" value="Xoá" style="height: 30px;">
+    </div>
+    <h2 style="text-align: center; color: aquamarine;">Đăng Ký</h2>
+    <div class="wrap-1" style="border-radius: 10px; box-shadow: 5px 0px 0px 5px rebeccapurple; width: 700px; margin:20px auto; background-color:aqua; display:flex; align-items:center; justify-content:center; height:100px">
+        <input type="text" id="accountSign" placeholder="tên đăng nhập: " style="width: 25%; margin:2px; border-radius: 10px; height: 30px;"><br>
+        <input type="password" id="accountPass" placeholder="Mật Khẩu: " style="width: 25%; margin:2px; border-radius: 10px; height: 30px;"><br>
+        <input type="password" id="accountCheckPass" placeholder="Nhập lại mật khẩu" style="width: 25%; margin:2px; border-radius: 10px; height: 30px;">
+        <input type="submit" onclick="signIn()" style="height: 30px;">
+    </div>
+    <script src="./localStorage.js"></script>
+</body>
+</html>
